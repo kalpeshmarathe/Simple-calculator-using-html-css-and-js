@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GlassoMorphic Calculator</title>
+</head>
+<body>
+    <center><h2 class="heading">GlassoMorphic Calculator Using Html Css & JavaScript </h2><br><span>by @kalpesh marathe</span></center>
+     <br>
+    <div class="container">
+        <div class="calculator" name="calc">
+            <input type="text" id="input"readonly style="padding: 0 20px;"class="value" name="text"/>
+            <!-- <span class="num" onclick="document.getElementById('input').value += '1'">greet</span> -->
+            <span class="num clear" onclick="document.getElementById('input').value = ''">C</span>
+            <span class="num1" onclick="document.getElementById('input').value += '/'">/</span>
+            <span class="num" onclick="document.getElementById('input').value += '*'">*</span>
+            <span class="num" onclick="document.getElementById('input').value += '9'">9</span>
+            <span class="num" onclick="document.getElementById('input').value += '8'">8</span>
+            <span class="num" onclick="document.getElementById('input').value += '7'">7</span>
+            <span class="num" onclick="document.getElementById('input').value += '-'">-</span>
+            <span class="num" onclick="document.getElementById('input').value += '6'">6</span>
+            <span class="num" onclick="document.getElementById('input').value += '5'">5</span>
+            <span class="num" onclick="document.getElementById('input').value += '4'">4</span>
+            <span class="num" onclick="document.getElementById('input').value += '+'">+</span>
+            <span class="num" onclick="document.getElementById('input').value += '3'">3</span>
+            <span class="num" onclick="document.getElementById('input').value += '2'">2</span>
+            <span class="num" onclick="document.getElementById('input').value += '1'">1</span>
+            <span class="num" onclick="document.getElementById('input').value += '0'">0</span>
+            <span class="num" onclick="document.getElementById('input').value += '00'">00</span>
+            <span class="num" onclick="document.getElementById('input').value += '.'">.</span>
+            <span class="num equal" onclick="document.getElementById('input').value = eval(document.getElementById('input').value)">=</span>
+    
+        <script>
+           document.getElementsByClassName("num1").addEventListener("click",function(){
+            document.getElementsByClassName("value").value = 1;
+           })
+
+            
+        </script>
+           
+            
+
+        </div>
+    </div>
+</body>
+</html>
